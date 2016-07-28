@@ -1,0 +1,85 @@
+body{
+    direction: rtl;
+    font: 12px/1.8 tahoma;
+    background: #343351;
+}
+ul,li,p,body{
+    margin: 0;
+    padding: 0
+}
+div.post{
+    width: 500px;
+    margin: 40px auto 0;
+}
+div.post div.box{
+     background: #ffffff;
+     min-height: 100px;
+     padding: 10px 20px;
+     margin: 10px 0;
+    text-align: justify;
+ }
+div.post div.box.ltr{
+    direction: ltr;
+    font: 12px/1.8 arial;
+}
+div.post div.box div.avato{
+    cursor: default;
+    background: #eeeeee;
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    float: right;
+    margin: 20px 0 30px 30px;
+    overflow: hidden;
+}
+div.post div.box.ltr div.avato{
+    float: left;
+    margin: 20px 30px 30px 0;
+}
+div.post div.box div.avato span{
+    font-size: 39px;
+    display: block;
+    line-height: 1.4;
+    font-family: Arial, serif;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    right: -100px;
+ }
+div.post div.box div.avato span.ltr{
+    line-height: 1.6;
+}
+div.post div.box div.avato span.rtl{
+}
+ul.tab{
+    height: 50px;
+    width: 300px;
+    margin: 30px auto 0;
+}
+ul.tab li{
+    float: right;
+    list-style: none;
+}
+ul.tab li a{
+    display: block;
+    margin: 4px;
+    background: #43427c;
+    color: #ffffff;
+    padding: 8px 38px;
+    text-decoration: none;
+}
+ul.tab li.active a{
+    background: #ffffff;
+    color: #000;
+    position: relative;
+}
+ul.tab li.active a::before {
+    background: #fff none repeat scroll 0 0;
+    bottom: -5px;
+    content: "";
+    height: 10px;
+    position: absolute;
+    right: 64px;
+    transform: rotate(45deg);
+    width: 10px;
+}
