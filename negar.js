@@ -1,5 +1,4 @@
 // https://github.com/miladdavoodi/negarjs
-
 (function () {
     (function ($) {
 
@@ -23,7 +22,7 @@
 
                 var optionslist = {
                     'Colorlist': [ '#ff9500', '#8e8e93', '#ffcc00', '#4cd964', '#34aadc', '#007aff', '#ff3b30','#5856d6', '#ff2d55', '#c7c7cc'],
-                    'effect': true,
+                    'Effect': true,
                     'ParagraphDirection': true
                 };
 
@@ -48,8 +47,6 @@
                         iNum++;
                     }
 
-                    ThisPost.find('[data-avato-cover]').css('background', Colorlist[iNum]);
-
                     if (optionslist.ParagraphDirection == true) {
                         fun_methods.Paragraph(ThisPost, Colorlist);
                         ThisPost.addClass(ClassLang)
@@ -57,7 +54,11 @@
                         ClassLang = null;
                     }
 
+
+                    console.log(optionslist.effect);
+
                     ThisPost.find('[data-avato-cover]').html('<span class="' + ClassLang + '">' + textAt.toUpperCase() + '</span>');
+                    ThisPost.find('[data-avato-cover]').css('background', optionslist.Colorlist[iNum]);
 
                     if (optionslist.effect == true) {
                         ThisPost.find('[data-avato-cover] span').animate({'right': '0px'}, 800);
