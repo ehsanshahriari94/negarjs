@@ -1,9 +1,9 @@
 # negarjs
 
+[Demo plugin negar](http://www.miladlabs.ir/demo/negarjs/index.html)
+
 
 ![Alt text](http://up2www.com/uploads/5d60%DB%B1%DB%B1.jpg "negarjs")
-
-Demo : [Sites Using React](http://www.miladlabs.ir/demo/negarjs/index.html)
 
 ```javascript
 $.Negar("div.post", {
