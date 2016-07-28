@@ -1,4 +1,3 @@
-// https://github.com/miladdavoodi/negarjs
 (function () {
     (function ($) {
 
@@ -54,13 +53,12 @@
                         ClassLang = null;
                     }
 
-
-                    console.log(optionslist.effect);
+                    console.log(optionslist.Effect);
 
                     ThisPost.find('[data-avato-cover]').html('<span class="' + ClassLang + '">' + textAt.toUpperCase() + '</span>');
                     ThisPost.find('[data-avato-cover]').css('background', optionslist.Colorlist[iNum]);
 
-                    if (optionslist.effect == true) {
+                    if (optionslist.Effect == true) {
                         ThisPost.find('[data-avato-cover] span').animate({'right': '0px'}, 800);
                     } else {
                         ThisPost.find('[data-avato-cover] span').css({'right': '0px'});
